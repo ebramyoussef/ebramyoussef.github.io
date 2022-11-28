@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/styles.css">
+		<title>Ebram Youssef</title>
+	</head>
+
+	<body>
+		<nav>
+			<div class="container">
+				<ul class="home">
+					<li><a href="index.html#">Ebram Youssef</a></li>
+				</ul>
+				<ul class="menu">
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="media/documents/resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</div>
+		</nav>
+		<article>
+			<div class="container">
+				<h2>Nonlinear waveguide SSFM numerical simulation</h2>
+				<p>This MATLAB numerical simulation utilizes the Split-Step Fourier Transform (SSFM) algorithm to numerically solve the Nonlinear Schrödinger equation (NLSE) for a TE polarized Gaussian beam propagating through a nonlinear waveguide geometry. The specific geometry of this simulation was a thin layer of a nonlinear material (ITO; Indium-Tin-Oxide), with a glass substrate to one side and air to the other. The Gaussian beam is typically assumed to start propagating on the air side of this geometry, and so the nonlinear interactions at the air-ITO interface are the ones studied. This simulation ignores the out-of-plane dimension (treating the problem using a 2D scalar formalism) and assumes saturable Kerr nonlinearity with and without linear and nonlinear losses. The beam parameters (i.e., spot size, wavelength, grazing angle, etc.) are changed as to find the optimal parameters for a variety of nonlinear effects. This simulation was developed for a project I work on with Saleem Iqbal (PhD candidate at Boyd group) aimed at experimentally exciting and observing surface spatial solitons at the interface of air-ITO in a similar geometry, and so the main purpose of this simulation is to find the optimal parameters for soliton excitation as theoretically proposed by W. J. Tomlinson in the 1980s. However, this simulation was used to observe a variety of other exciting nonlinear effects. This project is still ongoing. A link will be posted here if and when this is published.
+				</p>
+				<div class="container">
+					<figure>
+						<img class="gif" src="media/images/1.gif">
+						<figcaption>Simulation of beam incident on air-ITO interface, showing a filamentation effect in the transmitted beam</figcaption>
+					</figure>
+					<figure>
+						<img class="gif" src="media/images/2.gif">
+						<figcaption>Simulation of beam incident on glass-ITO interface, showing a weird nonlinear version of total internal reflection</figcaption>
+					</figure>
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div class="container">
+				&copy; Ebram Youssef, Rochester, NY, 2022
+			</div>
+		</footer>
+	</body>
+</html>
