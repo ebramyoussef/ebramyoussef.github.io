@@ -134,6 +134,8 @@ p {
 	
 	font-size: 24px;
 	line-height: 1.5em;
+	text-align: justify;
+	text-justify: inter-word;
 	
 }
 
@@ -205,6 +207,8 @@ h2, .h2href {
 	border-radius: 40px;
 	margin-top: 30px;
 	background-color: #6E00FF;
+	display: inline-block;
+	
 }
 
 
@@ -214,6 +218,15 @@ figcaption {
 	font-weight: bold;
 	font-size: 18px;
 	text-align: center;
+	
+}
+
+center {
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 	
 }
 
