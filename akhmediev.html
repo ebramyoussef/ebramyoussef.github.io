@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" href="media/images/favicon.png">
+		<title>Ebram Youssef</title>
+	</head>
+
+	<body>
+		<nav>
+			<div class="container">
+				<ul class="home">
+					<li><a href="index.html#">Ebram Youssef</a></li>
+				</ul>
+				<ul class="menu">
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="media/documents/resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</div>
+		</nav>
+		<article>
+			<div class="container">
+				<h2>Reproducing numerical results by Akhmediev et al.</h2>
+				<p>
+					Another MATLAB numerical simulation that uses the SSFM algorithm to numerically solve 
+					and simulate the NLSE in a linear-nonlinear geometry. In this case, the algorithm was used 
+					to reproduce the numerical results found by Akhmediev et al. (1984) in his paper 
+					<a href="http://www.jetp.ras.ru/cgi-bin/dn/e_061_01_0062.pdf" target="_blank">“Excitation of nonlinear surface waves by 
+					Gaussian light beams.” </a> The main purpose of this project was to test my SSFM code on problems with similar formalism
+					and differential equations that have known trusted numerical results. Although the numerical methods used by the original authors
+					(perturbation and inverse iteration) was significantly different, the results produced by my code utilizing the SSFM algorithm 
+					and the fast Fourier transform produced almost identical results in a much smaller runtime. Although the problem proposed by 
+					the authors of the aforementioned article is somewhat different than the ones we seek to solve, using this algorithm to reproduce
+					results with high accuracy meant that we could trust the accuracy of our code when used on other problems with unknown results 
+					(i.e., the ITO surface soliton problem we seek to solve) and proceed forward. 
+				</p>
+				<figure class="center">
+					<img src="media/images/2full.png">
+					<figcaption>Top: Original numerical results from Akhmediev's article. Bottom: Reproduced numerical results by my SSFM code.</figcaption>
+				</figure>
+			</div>
+		</article>
+		<footer>
+			<div class="container">
+				&copy; Ebram Youssef, Rochester, NY, 2022
+			</div>
+		</footer>
+	</body>
+</html>
