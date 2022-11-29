@@ -236,3 +236,11 @@ center {
 	margin: 20px auto;
 	
 }
+
+.contact li{
+
+	font-size: 24px;
+	line-height: 1.5em;
+	color: white;
+	padding: 10px;
+}
