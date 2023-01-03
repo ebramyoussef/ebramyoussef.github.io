@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" href="media/images/favicon.png">
+		<title>Ebram Youssef</title>
+	</head>
+
+	<body>
+		<nav>
+			<div class="container">
+				<ul class="home">
+					<li><a href="index.html#">Ebram Youssef</a></li>
+				</ul>
+				<ul class="menu">
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="media/documents/resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header>
+			<div class="container">
+				<h2>Reproducing numerical results by Moloney and Gubbels et al.</h2>
+				<p>
+					The algorithm used for reproducing the results by Akhmediev et al. was adapted to suit the physical parameters and geometry
+					of a study by Gubbels et al. and Moloney (1987) named <a href="https://doi.org/10.1364/JOSAB.4.001837" target="_blank">“Numerical study of soliton
+					emission from a nonlinear waveguide.”</a> Similar to my previous project reproducing the numerical results by Akhmediev et al.,
+					this project was aimed at testing my SSFM-based algorithm on problems with similar formalism and differential equations that have known 
+					trusted numerical results. However, the physical setup proposed by this study was considerably more intricate and similar to the
+					real-world problem we ultimately aim to solve (i.e., the nonlinear surface soliton project). Additionally, this study provided us with numerical results
+					for far more diverse nonlinear scenarios, which, when reproduced to high accuracy, gave us more confidence in the algorithm and its deployment to solve new
+					problems. Below is a presentation I presented to Professor Boyd and fellow group members at a group meeting in June 2022.
+					This presentation contains more details about the original study, as well as the original and reproduced numerical results in a variety of situations
+					(i.e., the ‘ideal’ case, in the presence of linear absorption, in the presence of angular and transverse beam misalignment, and in the case of saturation).
+					In all cases, the original results are shown on the left and my results are on the right. In all of the reproduced results,
+					the initial (beginning of propagation) wave is in black, while the final (end of propagation) wave is in blue.
+				</p>
+				<object
+					class="center"
+					data='media/documents/moloney.pdf'
+					type="application/pdf"
+					width="1000"
+					height="1000"
+				  >
+
+					<iframe
+					  src='media/documents/moloney.pdf'
+					  width="1000"
+					  height="1000"
+					>
+					</iframe>
+				</object>
+				
+			</div>
+		</header>
+		<footer>
+			<div class="container">
+				&copy; Ebram Youssef, Rochester, NY, 2022
+			</div>
+		</footer>
+	</body>
+</html>
