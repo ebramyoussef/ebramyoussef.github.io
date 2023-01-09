@@ -222,7 +222,7 @@ figcaption {
 	
 }
 
-center {
+.center {
 	
 	display: block;
 	margin-left: auto;
@@ -246,9 +246,24 @@ center {
 	padding: 40px;
 }
 
-.morebutton {
+.more {
 
 	width: 100%;
 	box-sizing: border-box;
 	text-align: center;
+}
+
+a .more:hover{
+	background-color: #4c00b0;
+}
+
+img {
+	
+	overflow-x: auto;
+}
+
+iframe {
+	
+	width: 100%;
+	
 }
