@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" href="media/images/favicon.png">
+		<title>Projects | RLD Chaos</title>
+	</head>
+
+	<body>
+		<nav>
+			<div class="container">
+				<ul class="home">
+					<li><a href="index.html#">Ebram Youssef</a></li>
+				</ul>
+				<ul class="menu">
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="media/documents/resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header>
+			<div class="container">
+				<h2>Period Doubling and Chaotic Behavior in an RLD Circuit</h2>
+				<p>
+					This project was conducted as part of the Advanced Experimental Techniques physics class (PHYS 243W, Fall 2022) at the University of Rochester
+					during my senior Fall semester. An experiment investigating the period doubling and chaotic behavior in nonlinear systems such as a
+					resistor-inductor-diode (RLD) circuit was implemented. Various driving voltages were inputted to the circuit at a resonance frequency of 260 kHz,
+					and the output voltage of the circuit’s response was recorded over time. In order to analyze the circuit’s behavior, I developed and implemented
+					a numerical algorithm that reads in the raw data resulting from each driving voltage, performs data cleanup and smoothing, then identifies the number,
+					as well as the peak voltage value, of distinct peaks in the system’s response to each driving voltage, and stores these values in an array, which was
+					then used to plot a bifurcation diagram (Peak output voltage vs peak input voltage) for the system to high levels of accuracy. The analyzed data was
+					also used to calculate experimental values of both Feigenbaum constants, both of which agreed with their theoretical counterparts within the 
+					uncertainty bounds. The produced bifurcation diagram exhibits multiple interesting characteristics, such as period doubling, eventual chaos,
+					and islands of stability. As shown below, the bifurcation diagram I produced (left) is in good qualitative agreement with a numerically simulated
+					bifurcation diagram produced by the authors of a 1998 study (<a href ="https://doi.org/10.1063/1.166256" target="_blank">Controlling chaos in a fast diode 
+					resonator using extended time-delay autosynchronization: Experimental observations and theoretical analysis</a>), despite differences in the circuit setup and goal
+					of the study, which might be considered an indicator for generalized usability and efficacy of my algorithm. The source code to my algorithm could be provided
+					to interested parties over email.
+				</p>
+				<figure class="center">
+					<img src="media/images/rld.png">
+					<figcaption>Left: my bifurcation diagram. Right: numerically simulated bifurcation diagram from a 1998 study</figcaption>
+				</figure>
+				<p> The document attached below is a scientific poster discussing this experiment as well as my results in further detail. 
+				It was presented to Professor Bigelow and fellow classmates at a poster session in December 2022. 
+				</p>
+				<object
+					class="center"
+					data='media/documents/rld.pdf'
+					type="application/pdf"
+					width="1000"
+					height="700"
+				  >
+
+					<iframe
+					  src='media/documents/sas.pdf'
+					  height="100%" width="100%"
+					>
+					</iframe>
+				</object>
+				
+			</div>
+		</header>
+		<footer>
+			<div class="container">
+				&copy; Ebram Youssef, Rochester, NY, 2022
+			</div>
+		</footer>
+	</body>
+</html>
